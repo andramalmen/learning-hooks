@@ -1,5 +1,7 @@
-import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Switch, useRouteMatch } from 'react-router-dom';
+
 import Counter from './use-reducer/Counter';
+import Form from './use-reducer/Form';
 import ShoppingList from './use-reducer/ShoppingList';
 
 const UseReducer = () => {
@@ -13,6 +15,9 @@ const UseReducer = () => {
                 <li>
                     <Link to={`${match.url}/shopping-list`}>Shopping List</Link>
                 </li>
+                <li>
+                    <Link to={`${match.url}/form`}>Form</Link>
+                </li>
             </ul>
             <Switch>
                 <Route path={`${match.path}/counter`}>
@@ -20,6 +25,9 @@ const UseReducer = () => {
                 </Route>
                 <Route path={`${match.path}/shopping-list`}>
                     <ShoppingList />
+                </Route>
+                <Route path={`${match.path}/form`}>
+                    <Form />
                 </Route>
             </Switch>
         </Router>
