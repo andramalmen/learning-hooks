@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Link, Route, Switch, useRouteMatch } from 'rea
 import Counter from './use-reducer/Counter';
 import Form from './use-reducer/Form';
 import ShoppingList from './use-reducer/ShoppingList';
+import StarWars from './use-reducer/StarWars';
 
 const UseReducer = () => {
     const match = useRouteMatch();
@@ -18,6 +19,9 @@ const UseReducer = () => {
                 <li>
                     <Link to={`${match.url}/form`}>Form</Link>
                 </li>
+                <li>
+                    <Link to={`${match.url}/star-wars`}>Star Wars</Link>
+                </li>
             </ul>
             <Switch>
                 <Route path={`${match.path}/counter`}>
@@ -28,6 +32,9 @@ const UseReducer = () => {
                 </Route>
                 <Route path={`${match.path}/form`}>
                     <Form />
+                </Route>
+                <Route path={`${match.path}/star-wars`}>
+                    <StarWars />
                 </Route>
             </Switch>
         </Router>
