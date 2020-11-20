@@ -19,6 +19,16 @@ const StarWars = () => {
             <StarWarsErrorBoundary onReset={handleReset} resetKeys={[name]}>
                 <StarWarsInfo searchName={name} />
             </StarWarsErrorBoundary>
+            <div className="mt-6">
+                <a
+                    className="text-pink-500"
+                    href="https://codesandbox.io/s/use-reducer-star-wars-im0n0"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Check and change the code in CodeSandbox
+                </a>
+            </div>
         </>
     );
 };

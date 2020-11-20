@@ -106,7 +106,7 @@ const Form = () => {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    Check the code in CodeSandbox
+                    Check and change the code in CodeSandbox
                 </a>
             </div>
         </div>
