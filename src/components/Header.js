@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import UseReducer from '../hooks/UseReducer';
+import UseState from '../hooks/UseState';
 
 const Header = () => (
     <Router>
@@ -53,12 +54,9 @@ const Header = () => (
             <Route path="/use-reducer">
                 <UseReducer />
             </Route>
-            {/* <Route path="/users">
-                <Users />
+            <Route path="/use-state">
+                <UseState />
             </Route>
-            <Route path="/">
-                <Home />
-            </Route> */}
         </Switch>
     </Router>
 );
