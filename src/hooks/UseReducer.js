@@ -11,16 +11,24 @@ const UseReducer = () => {
         <Router>
             <ul className="list-disc m-8">
                 <li>
-                    <Link to={`${match.url}/counter`}>Counter</Link>
+                    <Link className="hover:underline" to={`${match.url}/counter`}>
+                        Counter
+                    </Link>
                 </li>
                 <li>
-                    <Link to={`${match.url}/shopping-list`}>Shopping List</Link>
+                    <Link className="hover:underline" to={`${match.url}/shopping-list`}>
+                        Shopping List
+                    </Link>
                 </li>
                 <li>
-                    <Link to={`${match.url}/form`}>Form</Link>
+                    <Link className="hover:underline" to={`${match.url}/form`}>
+                        Form
+                    </Link>
                 </li>
                 <li>
-                    <Link to={`${match.url}/star-wars`}>Star Wars</Link>
+                    <Link className="hover:underline" to={`${match.url}/star-wars`}>
+                        Star Wars
+                    </Link>
                 </li>
             </ul>
             <Switch>
