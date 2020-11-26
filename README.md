@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Demo
 
-[Learning Hooks Demo](https://learning-hooks.vercel.app/)
+[Learning React Demos](https://learning-react.vercel.app/)
 
 ## Available Scripts
 
