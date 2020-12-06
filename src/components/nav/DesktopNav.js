@@ -3,9 +3,10 @@ import { Link, useLocation } from 'react-router-dom';
 
 import useHandleOutsideClick from '../../customHooks/handleOutsideClick';
 
-const DesktopNav = () => {
+const DesktopNav = React.memo(() => {
     const [openHooksMenu, setOpenHooksMenu] = React.useState(false);
     const hooksMenu = React.useRef();
+    console.log('desktopnav');
 
     const location = useLocation();
 
@@ -123,6 +124,6 @@ const DesktopNav = () => {
             </div>
         </nav>
     );
-};
+});
 
 export default DesktopNav;

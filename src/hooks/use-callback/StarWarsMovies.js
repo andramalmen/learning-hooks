@@ -43,13 +43,13 @@ const StarWarsMovies = () => {
                     Check and change the code in CodeSandbox
                 </a>
             </div>
-            <div className="flex mb-4">
+            <div className="flex-none md:flex mb-4">
                 <StarWarsErrorBoundary onReset={handleReset} resetKeys={[movies]}>
-                    <div className="w-3/4  h-12">
-                        <ListStarWarsMovies movies={movies} onRemove={handleRemoveFromList} />
-                    </div>
-                    <div className="w-1/4  h-12">
+                    <div className="w-auto md:w-1/4 md:h-12">
                         <AddStarWarsMovie movies={allMovies} />
+                    </div>
+                    <div className="w-auto md:w-3/4 md:h-12">
+                        <ListStarWarsMovies movies={movies} onRemove={handleRemoveFromList} />
                     </div>
                 </StarWarsErrorBoundary>
             </div>
@@ -102,7 +102,7 @@ const AddStarWarsMovie = React.memo(({ movies }) => {
     };
 
     return (
-        <>
+        <div className="mr-2">
             <div className="text-gray-900 font-bold text-xl mb-2 pl-4">
                 Click on the movie name to add it to the list
             </div>
@@ -124,7 +124,7 @@ const AddStarWarsMovie = React.memo(({ movies }) => {
                     })}
                 </ul>
             ) : null}
-        </>
+        </div>
     );
 });
 

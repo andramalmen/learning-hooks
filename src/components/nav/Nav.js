@@ -23,12 +23,15 @@ const Nav = () => {
 
     useHandleOutsideClick(handleOutsideClick);
 
-    const toggleMobileMenu = e => {
-        if (typeof e !== 'undefined') {
-            e.preventDefault();
-        }
-        setOpenMobileMenu(!openMobileMenu);
-    };
+    const toggleMobileMenu = React.useCallback(
+        e => {
+            if (typeof e !== 'undefined') {
+                e.preventDefault();
+            }
+            setOpenMobileMenu(!openMobileMenu);
+        },
+        [openMobileMenu]
+    );
 
     return (
         <div className="relative bg-white">

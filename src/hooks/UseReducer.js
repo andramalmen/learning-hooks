@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Link, Route, Switch, useRouteMatch } from 'react-router-dom';
 
+import PageSubTitle from '../components/common/PageSubTitle';
 import Counter from './use-reducer/Counter';
 import Form from './use-reducer/Form';
 import ShoppingList from './use-reducer/ShoppingList';
@@ -9,6 +10,8 @@ const UseReducer = () => {
     const match = useRouteMatch();
     return (
         <Router>
+            <PageSubTitle title="Use Reducer" />
+
             <ul className="list-disc m-8">
                 <li>
                     <Link className="hover:underline" to={`${match.url}/counter`}>
