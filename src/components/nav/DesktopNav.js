@@ -6,7 +6,6 @@ import useHandleOutsideClick from '../../customHooks/handleOutsideClick';
 const DesktopNav = React.memo(() => {
     const [openHooksMenu, setOpenHooksMenu] = React.useState(false);
     const hooksMenu = React.useRef();
-    console.log('desktopnav');
 
     const location = useLocation();
 

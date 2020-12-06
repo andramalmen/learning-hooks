@@ -2,8 +2,6 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 
 const MobileNav = ({ menuState = false, onToggleMobileMenu }) => {
-    console.log('mobilenav');
-
     return (
         <div
             className={`absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden ${
